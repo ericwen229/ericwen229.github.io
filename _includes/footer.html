@@ -7,7 +7,6 @@
       {%- if site.github_username -%}
       <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}"><svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span>{{ site.github_username | escape }}</span></a></li>
       {%- endif -%}
-      <li><a href="{{ '/feed.xml' | relative_url }}" type="application/atom+xml"><svg class="svg-icon" aria-hidden="true" focusable="false"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>订阅 Feed</span></a></li>
     </ul>
   </div>
 </footer>
