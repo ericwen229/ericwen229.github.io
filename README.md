@@ -45,7 +45,13 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ## Write articles
 
-Create `_posts/YYYY-MM-DD-post-title.md` with YAML front matter followed by Markdown:
+Create an article:
+
+```sh
+./new-post.sh
+```
+
+Rename the generated file in `_posts/` and edit its front matter and Markdown body:
 
 ```markdown
 ---
