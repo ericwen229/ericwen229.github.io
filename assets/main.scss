@@ -1,0 +1,25 @@
+---
+---
+
+@import "minima";
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin-bottom: 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .svg-icon {
+    flex-shrink: 0;
+    padding-right: 0;
+    color: currentColor;
+    fill: currentColor;
+  }
+}

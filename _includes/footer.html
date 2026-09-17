@@ -1,0 +1,13 @@
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <ul class="contact-list footer-contacts">
+      {%- if site.email -%}
+      <li><a class="u-email" href="mailto:{{ site.email | escape }}"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> <span>{{ site.email | escape }}</span></a></li>
+      {%- endif -%}
+      {%- if site.github_username -%}
+      <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}"><svg class="svg-icon" aria-hidden="true"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span>{{ site.github_username | escape }}</span></a></li>
+      {%- endif -%}
+      <li><a href="{{ '/feed.xml' | relative_url }}" type="application/atom+xml"><svg class="svg-icon" aria-hidden="true" focusable="false"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>订阅 Feed</span></a></li>
+    </ul>
+  </div>
+</footer>
